@@ -1,0 +1,10 @@
+export const PARTNERS = "partners";
+export const BOOKING_ITEM = "bookingitems";
+export const TABLES_COLLECTION = "tables";
+export const BITACORA = "bitacoras";
+export const SHIFTS = "shifts";
+export const SCHEDULE = "schedules";
+export const GEOCODING = "geocoding";
+export const EXPERIENCES = "experiences";
+export const PROMOTIONS = "promotions";
+export const ACTIVITIES = "activities";
