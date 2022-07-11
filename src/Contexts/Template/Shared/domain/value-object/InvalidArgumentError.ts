@@ -1,4 +1,4 @@
-import { DomainError } from "../Errors/DomainError";
+import {DomainError} from '../Errors/DomainError';
 
 export class InvalidArgumentError extends DomainError {
 }

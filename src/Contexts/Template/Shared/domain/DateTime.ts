@@ -134,7 +134,15 @@ export class DateTime {
              minute,
              second,
              millisecond
-           }: { year?: number, month?: number, day?: number, hour?: number, minute?: number, second?: number, millisecond?: number }): DateTime {
+           }: {
+    year?: number,
+    month?: number,
+    day?: number,
+    hour?: number,
+    minute?: number,
+    second?: number,
+    millisecond?: number
+  }): DateTime {
     const cloneDay = this._date.clone();
     if (year !== undefined) {
       cloneDay.year(year);

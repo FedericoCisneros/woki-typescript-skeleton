@@ -1,5 +1,5 @@
-import { StringLengthIs0 } from "../StringLengthIs0";
-import { ValueObject } from "./ValueObject";
+import { StringLengthIs0 } from '../StringLengthIs0';
+import { ValueObject } from './ValueObject';
 
 export class NonEmptyStringValueObject extends ValueObject<string> {
     constructor(value: string) {
@@ -9,7 +9,7 @@ export class NonEmptyStringValueObject extends ValueObject<string> {
 
     private ensureLengthIsMoreThan0(value: string): void {
         if (value.length === 0) {
-            throw new StringLengthIs0("The string cannot be empty");
+            throw new StringLengthIs0('The string cannot be empty');
         }
     }
 }

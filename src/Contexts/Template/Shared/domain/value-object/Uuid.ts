@@ -1,6 +1,6 @@
-import {v4 as uuid} from "uuid";
-import validate from "uuid-validate";
-import { NonEmptyStringValueObject } from "./NonEmptyStringValueObject";
+import {v4 as uuid} from 'uuid';
+import validate from 'uuid-validate';
+import { NonEmptyStringValueObject } from './NonEmptyStringValueObject';
 //import {ValueObject} from "./ValueObject";
 
 export class Uuid extends NonEmptyStringValueObject {

@@ -34,6 +34,7 @@
     "deploy:dev": "npm run build-dev && gcloud run deploy {{PROYECT}} --image {{IMAGE_PROYECT}} --port=80 --platform=managed --region={{REGION}} --allow-unauthenticated --set-env-vars NODE_ENV=dev"
   },
   "dependencies": {
+    "@aws-sdk/client-sns": "^3.121.0",
     "axios": "^0.27.2",
     "body-parser": "^1.19.0",
     "bodybuilder": "^2.4.0",
@@ -59,6 +60,7 @@
     "morgan": "^1.10.0",
     "node-dependency-injection": "^2.7.1",
     "nunjucks": "^3.2.3",
+    "shx": "^0.3.4",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3",
     "uuid": "^8.3.2",
@@ -82,6 +84,8 @@
     "@types/node": "^16.10.2",
     "@types/nunjucks": "^3.2.0",
     "@types/supertest": "^2.0.11",
+    "@types/uuid": "^8.3.4",
+    "@types/uuid-validate": "0.0.1",
     "cucumber": "^6.0.5",
     "faker": "^5.5.3",
     "husky": "^7.0.2",
